@@ -1,0 +1,181 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Calibri;}{\f1\fnil\fcharset2 Symbol;}}
+{\*\generator Riched20 10.0.19041}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\qc\ul\b\f0\fs36\lang9 Flight Reservation\par
+
+\pard\sa200\sl276\slmult1\ulnone\fs40 1. \ul Introduction:\par
+\ulnone\fs32 1.1\fs36  \fs32 Purpose:\par
+\b0\fs28 The purpose of this document is to build an online system to manage cab and passengers to ease the cab management. The app should provide an option for customers to book a cab as well as to cancel the booked cab at anytime. It should also provide an option to search for cab availability. \ul\b\par
+\ulnone\fs32 1.2\fs36  \fs32 Scope of the project:\ul\fs36\par
+\ulnone\b0\fs28 The purpose of the online cab booking system is to ease cab booking and to create a convenient and easy-to-use application for passengers, trying to book cab. The system is based on a relational database with its cab booking function. We will have a database server supporting hundreds of major cities as well as thousands of cabs by various cab companies. Above all, we hope to provide a comfortable user experience along with the best pricing available.\par
+\b\fs32 1.3\fs36  \fs32 Overall description of the project:\b0\fs24\lang16393\par
+
+\pard\li360\qj\b\fs32 PRODUCT PERSPECTIVES\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\qj\b0\fs28 System Interfaces\par
+{\pntext\f1\'B7\tab}User Interfaces\par
+{\pntext\f1\'B7\tab}Hardware Interfaces\par
+{\pntext\f1\'B7\tab}Software Interfaces\par
+{\pntext\f1\'B7\tab}Communications Interfaces\par
+
+\pard\li360\qj\b\fs24\par
+\fs32 User Requirement\par
+\fs24\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\qj\b0\fs28 Login-system\par
+{\pntext\f1\'B7\tab}Authentication-system\par
+{\pntext\f1\'B7\tab}Cab-booking-System\par
+{\pntext\f1\'B7\tab}Cancellation-System\b\fs32\lang9\par
+
+\pard\sa200\sl276\slmult1 2. \ul Actors:\par
+
+\pard 
+{\pntext\f0 1.\tab}{\*\pn\pnlvlbody\pnf0\pnindent0\pnstart1\pndec{\pntxta.}}
+\fi-360\li720\sa200\sl276\slmult1\ulnone\b0\fs28 User\ul\b\fs36\par
+{\pntext\f0 2.\tab}\ulnone\b0\fs28 Admin\ul\b\fs36\par
+{\pntext\f0 3.\tab}\ulnone\b0\fs28 Provider\ul\b\fs36\par
+{\pntext\f0 4.\tab}\ulnone\b0\fs28 Financial management\ul\b\fs36\par
+
+\pard\sa200\sl276\slmult1\ulnone 3. \ul Funcionalities:\par
+
+\pard 
+{\pntext\f0 1.\tab}{\*\pn\pnlvlbody\pnf0\pnindent0\pnstart1\pndec{\pntxta.}}
+\fi-360\li720\sa200\sl276\slmult1\ulnone\b0\fs32 Admin login\ul\b\fs36\par
+{\pntext\f0 2.\tab}\ulnone\b0\fs32 User login & registeration\ul\b\fs36\par
+{\pntext\f0 3.\tab}\ulnone\b0\fs32 Flight-master login & registeration\ul\b\fs36\par
+{\pntext\f0 4.\tab}\ulnone\b0\fs32 Financial login & registeration\ul\b\fs36\par
+{\pntext\f0 5.\tab}\ulnone\b0\fs32 Search flight\ul\b\fs36\par
+{\pntext\f0 6.\tab}\ulnone\b0\fs32 Book flight\ul\b\fs36\par
+{\pntext\f0 7.\tab}\ulnone\b0\fs32 Payment\ul\b\fs36\par
+{\pntext\f0 8.\tab}\ulnone\b0\fs32 Get invoice\ul\b\fs36\par
+{\pntext\f0 9.\tab}\ulnone\b0\fs32 Add flight details(By provider).\ul\b\fs36\par
+{\pntext\f0 10.\tab}\ulnone\b0\fs32 Update flight details(By provider).\ul\b\fs36\par
+
+\pard\sa200\sl276\slmult1\ulnone 4. \ul Requirements:\par
+\ulnone\fs32 4.1\b0 . \ul User login page:\par
+\ulnone\fs28 A user login is a page where user can enter the user details like emailId password and can login to the account. It contains the following:\ul\b\fs36\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\ulnone\b0\fs28 Text field for User email\ul\b\fs36\par
+{\pntext\f1\'B7\tab}\ulnone\b0\fs28 Text field for User password (input type alphanumeric, min 8 character)\ul\b\fs36\par
+{\pntext\f1\'B7\tab}\ulnone\b0\fs28 Submit button (validate username and password, if username not matching alert user that username is not correct, if password is wrong alert user to change password, else Signin user).\ul\b\fs36\par
+{\pntext\f1\'B7\tab}\ulnone\b0\fs28 Button for navigating to Forgot password page\ul\b\fs36\par
+{\pntext\f1\'B7\tab}\ulnone\b0\fs28 Button for navigating to SignUp page\ul\b\fs36\par
+{\pntext\f1\'B7\tab}\ulnone\b0\fs28 Button for navigating to Admin login page\ul\b\fs36\par
+
+\pard\sa200\sl276\slmult1\ulnone\fs32 4.2. \ul\b0 User registration page:\par
+\ulnone\fs28 A user registration is a page where user can enter the user details like username password, email id, profile pic etc. and can create a new account. It contains the following:\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 Text field for User name which has a input type as text.\ul\fs32\par
+{\pntext\f1\'B7\tab}\ulnone\fs28 Image picker for picking image for user profile.\ul\fs32\par
+{\pntext\f1\'B7\tab}\ulnone\fs28 Captcha and photo verification for verification. On wrong captcha it will alert user.\ul\fs32\par
+{\pntext\f1\'B7\tab}\ulnone\fs28 Text field for User email\ul\b\fs36\par
+{\pntext\f1\'B7\tab}\ulnone\b0\fs28 Text field for User password (alphanumeric, min 8 character)\ul\b\fs36\par
+{\pntext\f1\'B7\tab}\ulnone\b0\fs28 User confirm password (alphanumeric, min 8 character)\ul\b\fs36\par
+{\pntext\f1\'B7\tab}\ulnone\b0\fs28 Button for navigating to User login page\ul\b\fs36\par
+{\pntext\f1\'B7\tab}\ulnone\b0\fs28 Submit button(validate username and password, if username already exists alert user to change username, if password already exists alert user to change username, else create new user)\ul\b\fs36\par
+
+\pard\sa200\sl276\slmult1\ulnone\fs32 4.3\b0 . \ul Admin login:\par
+\ulnone\fs28 An admin login is a page where admin can enter the details like emailId password and can login to the account. It contains the following:\ul\fs32\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\ulnone\fs28 Text field for Admin email\ul\b\fs36\par
+{\pntext\f1\'B7\tab}\ulnone\b0\fs28 Text field for Admin password (alphanumeric, min 8 character)\ul\b\fs36\par
+{\pntext\f1\'B7\tab}\ulnone\b0\fs28 Submit button(validate username and password, if username not matching alert user to change username, if password is wrong alert user to change password, else Signin admin).\ul\b\fs36\par
+{\pntext\f1\'B7\tab}\ulnone\b0\fs28 Button for navigating back to User login page\ul\b\fs36\par
+
+\pard\sa200\sl276\slmult1\ulnone\fs32 4.4\b0 . \ul Flight-master login page:\par
+\ulnone\fs28 An flight-master login is a page where flight-master can enter the details like emailId password and can login to the account. It contains the following:\ul\fs32\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\ulnone\fs28 Text field for flight-master email\ul\b\fs36\par
+{\pntext\f1\'B7\tab}\ulnone\b0\fs28 Text field for flight-master password ( input type alphanumeric, min 8 character)\ul\b\fs36\par
+{\pntext\f1\'B7\tab}\ulnone\b0\fs28 Submit button(validate username and password, if username not matching alert user to change username, if password is wrong alert user to change password, else Signin provider).\ul\b\fs36\par
+{\pntext\f1\'B7\tab}\ulnone\b0\fs28 Button for navigating to Forgot password page\ul\b\fs36\par
+{\pntext\f1\'B7\tab}\ulnone\b0\fs28 Button for navigating to SignUp page\ul\b\fs36\par
+{\pntext\f1\'B7\tab}\ulnone\b0\fs28 Button for navigating to User login page\ul\b\fs36\par
+
+\pard\sa200\sl276\slmult1\ulnone\fs32 5. \ul\b0 Flight-master registration page:\par
+\ulnone\fs28 An privoder registration is a page where flight-master can enter the details like emailId password and can login to the account. It contains the following:\ul\fs32\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\ulnone\fs28 Text field for Flight-master email with input type as text.\ul\b\fs36\par
+{\pntext\f1\'B7\tab}\ulnone\b0\fs28 Text field for Flight-master name with input type as text.\ul\b\fs36\par
+{\pntext\f1\'B7\tab}\ulnone\b0\fs28 Captcha and photo verification which on wrong capthca, or leaving blank will alert user.\ul\b\fs36\par
+{\pntext\f1\'B7\tab}\ulnone\b0\fs28 Text field for flight-master password (alphanumeric, min 8 character).\ul\b\fs36\par
+{\pntext\f1\'B7\tab}\ulnone\b0\fs28 User confirm password (alphanumeric, min 8 character).\ul\b\fs36\par
+{\pntext\f1\'B7\tab}\ulnone\b0\fs28 Button for navigating to flight-master login page.\ul\b\fs36\par
+{\pntext\f1\'B7\tab}\ulnone\b0\fs28 Submit button (validate username and password, if username already exists alert user to change username, if password already exists alert user to change username, else create new user).\ul\b\fs36\par
+
+\pard\sa200\sl276\slmult1\ulnone\fs32 6\b0 . \ul Finance login page:\par
+\ulnone\fs28 An finance login is a page where finance can enter the details like emailId password and can login to the account. It contains the following:\ul\b\fs36\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\ulnone\b0\fs28 Text field for Finance email\ul\b\fs36\par
+{\pntext\f1\'B7\tab}\ulnone\b0\fs28 Text field for Finance password ( input type alphanumeric, min 8 character)\ul\b\fs36\par
+{\pntext\f1\'B7\tab}\ulnone\b0\fs28 Submit button(validate finance name and password, if username not matching alert user to change username, if password is wrong alert user to change password, Signin finance).\ul\b\fs36\par
+{\pntext\f1\'B7\tab}\ulnone\b0\fs28 Button for navigating to Forgot password page\ul\b\fs36\par
+{\pntext\f1\'B7\tab}\ulnone\b0\fs28 Button for navigating to SignUp page\ul\b\fs36\par
+{\pntext\f1\'B7\tab}\ulnone\b0\fs28 Button for navigating to User login page\ul\b\fs36\par
+
+\pard\sa200\sl276\slmult1\ulnone\fs32 7. \ul\b0 Finance registration page:\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\ulnone\fs28 Text field for Finance email\ul\b\fs36\par
+{\pntext\f1\'B7\tab}\ulnone\b0\fs28 Text field for Finance password (alphanumeric, min 8 character)\ul\b\fs36\par
+{\pntext\f1\'B7\tab}\ulnone\b0\fs28 User confirm password (alphanumeric, min 8 character)\ul\b\fs36\par
+{\pntext\f1\'B7\tab}\ulnone\b0\fs28 Button for navigating to finance login page\ul\b\fs36\par
+{\pntext\f1\'B7\tab}\ulnone\b0\fs28 Submit button (validate username and password, if username already exists alert user to change username, if password already exists alert user to change username, else create new user).\ul\b\fs36\par
+
+\pard\sa200\sl276\slmult1\ulnone\fs32 8. \ul\b0 Search flight page:\b\fs36\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\ulnone\b0\fs28 Search bar for searching flight(get alphanumeric as input, on typing each letter it should show the flights that matches the corresponding letter and on touching them it should search for the corresponding flight.)\ul\b\fs36\par
+{\pntext\f1\'B7\tab}\ulnone\b0\fs28 A clear icon button for clearing the search(should appear only when atleast one letter is there).\ul\b\fs36\par
+{\pntext\f1\'B7\tab}\ulnone\b0\fs28 A search icon button that will take the text entered and search for the flights that matches the text and should give the result as a list with preview information(image, name, route, time). If there is no match it should show, \b "No result found"\b0 .\ul\b\fs36\par
+{\pntext\f1\'B7\tab}\ulnone\b0\fs28 On tapping a specific result, it should navigate to a new page where the user get detailed view of flight(image, name, route, time, seat availablity, rate, offers if theres any, etc.). A booking button should be there on the bottom which will allow user to book the flight. On tapping the button, if there is seat availability,  it will allocate a seat number for the user and navgate to the book flight page, else it will show a message like \b "Sorry there is no seat availability"\b0 .\ul\b\fs36\par
+
+\pard\sa200\sl276\slmult1\ulnone\fs32 9. \ul\b0 Book flight:\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\ulnone\fs28 A textfield for inputing user name as text\ul\b\fs36\par
+{\pntext\f1\'B7\tab}\ulnone\b0\fs28 A textfield for inputing user email id.\ul\b\fs36\par
+{\pntext\f1\'B7\tab}\ulnone\b0\fs28 It should show the information of flight such as:\ul\b\fs36\par
+
+\pard\sa200\sl276\slmult1\ulnone\b0\fs28\tab\tab a. Flight name\par
+\tab\tab b. Flight route\par
+\tab\tab c. Flight image\par
+\tab\tab d. Flight time\par
+\tab\tab e. Seat number\par
+\tab\tab f. Rate\par
+\tab\tab g. If there's offers then show it as well.\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 A payment button which on tapping will store the above information for temp and will navigate to payment page.\par
+{\pntext\f1\'B7\tab}A cancel button which will clear all the entered information and the allocated seat and navigate back to flight details page.\par
+
+\pard\sa200\sl276\slmult1\b\fs32 10. \ul\b0 Payment page:\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\ulnone\fs28 A text field for getting user debit/ credit card number, on entering the number it should automatically detect the card company, and if the number is wrong, it should show a error message with red colour like \b "Invalid card number"\b0 .\par
+{\pntext\f1\'B7\tab}A text field for getting user debit/ credit card expiry as date format \b mm/yy\b0 , on entering the date it should automatically detect if the date is wrong or not,if it's wrong it should show a error message with red colour like \b "Invalid card expiry"\b0 .\par
+{\pntext\f1\'B7\tab}A text field for getting user debit/ credit card cvc as number, on entering the date it should automatically detect if the cvc is wrong or not,if it's wrong it should show a error message with red colour like \b "Invalid cvc"\b0 .\par
+{\pntext\f1\'B7\tab}A submit button which on pressed will check if all the informations are correct and if yes, it will make the payment and the user will get a preview of the invoice containing details like: \b\i username, user email, flight name, flight route, seat number, flight time, amount\b0\i0 , and the user can download it as pdf or can close the invoice which will navigate the user back to the flight details page, else if the details are not correct it will show a error message like \b "Wrong credentials"\b0 , or if there is any issue in payment it will show error message like \b "Payment failed try again"\b0 .\par
+
+\pard\sa200\sl276\slmult1\b\fs32 11. \ul\b0 Add flight details(by provider):\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\ulnone\fs28 Text field to input flight name(alphanumeric).\par
+{\pntext\f1\'B7\tab}Text field to input flight number(alphanumeric).\par
+{\pntext\f1\'B7\tab}Text field to input flight routes(alphanumeric).\par
+{\pntext\f1\'B7\tab}TextField to input flight schedule in the order, Day, time, route.\par
+{\pntext\f1\'B7\tab}Text field to input flight rate(number).\par
+{\pntext\f1\'B7\tab}Image picker to pick image.\par
+{\pntext\f1\'B7\tab}Number of seats(number).\par
+{\pntext\f1\'B7\tab}Submit button that will validate if all the data are entered, if any data is missing it will alert the user to enter the corresponding field.\par
+
+\pard\sa200\sl276\slmult1\b\fs32 12. \ul\b0 Update flight details(by flight-master):\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\ulnone\fs28 Text field to input flight name(alphanumeric), the previous flight name should be given as initial value of the textfield so that flight-master may know the previous flight name.\par
+{\pntext\f1\'B7\tab}Text field to input flight number(alphanumeric), the previous flight number should be given as initial value of the textfield so that flight-master may know the previous flight number.\par
+{\pntext\f1\'B7\tab}Listview of previous flight routes suffixed by a delete button. which on clicking will delete the corresponding flight route.\par
+{\pntext\f1\'B7\tab}Text field to input flight routes(alphanumeric).\par
+{\pntext\f1\'B7\tab}Listview of previous flight schedule with day, time and route suffixed by a delete button. which on clicking will delete the corresponding flight schedule.\par
+{\pntext\f1\'B7\tab}TextField to input flight schedule in the order, day, time, route.\par
+{\pntext\f1\'B7\tab}Text field to input flight rate(number), the previous flight rate should be given as initial value of the textfield so that flight-master may know the previous flight rate.\par
+{\pntext\f1\'B7\tab}Image picker to pick image, the previous flight image should be shown on side of the picker so that flight-master may know the previous flight image.\par
+{\pntext\f1\'B7\tab}Number of seats(number), the previous number of seats should be given as initial value of the textfield so that flight-master may know the previousnumber of seats.\par
+{\pntext\f1\'B7\tab}Submit button that will validate new datas that are entered and update the data, if any error occur while updating data it will alert the user to enter the corresponding field. \par
+
+\pard\sa200\sl276\slmult1\par
+\ul\b\fs36\par
+}
+ 
